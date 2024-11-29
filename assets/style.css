@@ -1,0 +1,467 @@
+/* General */
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 4rem 0;
+  }
+  
+  #about p {
+    font-size: 1.1rem;
+  }
+  
+  .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #change{
+    width: 285px;
+    height: 285px;
+    display: block;
+} 
+
+/* Para centrar todo el contenido de .box */
+.box {
+  display: flex;
+  justify-content: center; 
+  align-items: center;   
+  gap: 20px;              
+  flex-wrap: wrap;       
+}
+
+/* Estilos para cada elemento dentro de la caja */
+.box-item {
+  background-color: #f8f9fa; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+  width: 250px; 
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.box-item:hover {
+  transform: scale(1.05); 
+}
+
+/* Estilos para las imágenes */
+.box-item figure {
+  margin: 0;
+}
+
+.box-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Para el título y texto */
+.box-item h4 {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box-item p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Contenedor general */
+.tecnologia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Estilo para las figuras */
+.tecnologia figure {
+  margin: 0;
+  position: relative;
+  width: 150px; 
+  height: 150px;
+  overflow: hidden; 
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Imágenes dentro de las figuras */
+.tecnologia img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  object-fit: cover; 
+  transform: translate(-50%, -50%) scale(1); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+/* Efecto zoom en hover */
+.tecnologia figure:hover img {
+  transform: translate(-50%, -50%) scale(1.2); 
+}
+
+/* Estilo para los subtítulos */
+.tecnologia figcaption {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tecnologia figcaption a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.tecnologia figcaption a:hover {
+  color: #007bff; 
+}
+
+.form-container {
+  background-color: #f8f9fa; 
+  width: 100vw;
+}
+
+  /* Footer */
+  footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #17a2b8; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  
+  /* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  /* General */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 0;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#change{
+  width: 285px;
+  height: 285px;
+  display: block;
+} 
+
+/* Para centrar todo el contenido de .box */
+.box {
+display: flex;
+justify-content: center; 
+align-items: center;   
+gap: 20px;              
+flex-wrap: wrap;       
+}
+
+/* Estilos para cada elemento dentro de la caja */
+.box-item {
+background-color: #f8f9fa; 
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+width: 250px; 
+text-align: center;
+transition: transform 0.2s ease-in-out;
+}
+
+.box-item:hover {
+transform: scale(1.05); 
+}
+
+/* Estilos para las imágenes */
+.box-item figure {
+margin: 0;
+}
+
+.box-item img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+/* Para el título y texto */
+.box-item h4 {
+margin-top: 15px;
+font-size: 18px;
+font-weight: bold;
+}
+
+.box-item p {
+font-size: 14px;
+color: #6c757d;
+}
+
+/* Contenedor general */
+.tecnologia {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+text-align: center;
+}
+
+/* Estilo para las figuras */
+.tecnologia figure {
+margin: 0;
+position: relative;
+width: 150px; 
+height: 150px;
+overflow: hidden; 
+border-radius: 10px;
+transition: transform 0.3s ease-in-out;
+}
+
+/* Imágenes dentro de las figuras */
+.tecnologia img {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50%;
+object-fit: cover; 
+transform: translate(-50%, -50%) scale(1); 
+transition: transform 0.3s ease-in-out; 
+}
+
+/* Efecto zoom en hover */
+.tecnologia figure:hover img {
+transform: translate(-50%, -50%) scale(1.2); 
+}
+
+/* Estilo para los subtítulos */
+.tecnologia figcaption {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+}
+
+.tecnologia figcaption a {
+text-decoration: none;
+color: inherit;
+transition: color 0.3s ease-in-out;
+}
+
+.tecnologia figcaption a:hover {
+color: #007bff; 
+}
+
+.form-container {
+background-color: #f8f9fa; 
+width: 100vw;
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #17a2b8; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+}
+/* Pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  /* General */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Secciones */
+section {
+  padding: 4rem 0;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+#change{
+  width: 285px;
+  height: 285px;
+  display: block;
+} 
+
+/* Para centrar todo el contenido de .box */
+.box {
+display: flex;
+justify-content: center; 
+align-items: center;   
+gap: 20px;              
+flex-wrap: wrap;       
+}
+
+/* Estilos para cada elemento dentro de la caja */
+.box-item {
+background-color: #f8f9fa; 
+padding: 15px;
+border-radius: 8px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+width: 250px; 
+text-align: center;
+transition: transform 0.2s ease-in-out;
+}
+
+.box-item:hover {
+transform: scale(1.05); 
+}
+
+/* Estilos para las imágenes */
+.box-item figure {
+margin: 0;
+}
+
+.box-item img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+
+/* Para el título y texto */
+.box-item h4 {
+margin-top: 15px;
+font-size: 18px;
+font-weight: bold;
+}
+
+.box-item p {
+font-size: 14px;
+color: #6c757d;
+}
+
+/* Contenedor general */
+.tecnologia {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+text-align: center;
+}
+
+/* Estilo para las figuras */
+.tecnologia figure {
+margin: 0;
+position: relative;
+width: 150px; 
+height: 150px;
+overflow: hidden; 
+border-radius: 10px;
+transition: transform 0.3s ease-in-out;
+}
+
+/* Imágenes dentro de las figuras */
+.tecnologia img {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 50%;
+object-fit: cover; 
+transform: translate(-50%, -50%) scale(1); 
+transition: transform 0.3s ease-in-out; 
+}
+
+/* Efecto zoom en hover */
+.tecnologia figure:hover img {
+transform: translate(-50%, -50%) scale(1.2); 
+}
+
+/* Estilo para los subtítulos */
+.tecnologia figcaption {
+margin-top: 10px;
+font-size: 14px;
+font-weight: bold;
+color: #333;
+}
+
+.tecnologia figcaption a {
+text-decoration: none;
+color: inherit;
+transition: color 0.3s ease-in-out;
+}
+
+.tecnologia figcaption a:hover {
+color: #007bff; 
+}
+
+.form-container {
+background-color: #f8f9fa; 
+width: 100vw;
+}
+
+/* Footer */
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #17a2b8; 
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  }
+}
